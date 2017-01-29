@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npm run check-style && (istanbul cover --include-all-sources tape -- '!(node_modules)/**/*.test.js' | tap-spec) && npm run check-coverage && npm run check-security",
     "quick-test": "tape '!(node_modules)/**/*.test.js' | tap-spec",
+    "check-security": "nsp check",
     "check-coverage": "istanbul check-coverage",
     "check-style": "standard"
   },
@@ -29,6 +30,7 @@
   "devDependencies": {
     "cover": "^0.2.9",
     "istanbul": "^0.4.5",
+    "nsp": "^2.6.2",
     "standard": "^8.6.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3",
