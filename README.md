@@ -1,4 +1,4 @@
-# Canopy
+# Canopy [ ![Codeship Status for robhaswell/canopy](https://app.codeship.com/projects/49893e50-c891-0134-6fb0-6ac8e955f005/status?branch=master)](https://app.codeship.com/projects/199046)
 🌴 A simple Node logging library for the cloud
 
 ## Motivation
