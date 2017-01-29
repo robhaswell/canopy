@@ -4,7 +4,7 @@
   "description": "🌴 A simple Node logging library for the cloud",
   "main": "lib/canopy.js",
   "scripts": {
-    "test": "npm run check-style && (istanbul cover --include-all-sources tape -- '!(node_modules)/**/*.test.js' | tap-dot) && npm run check-coverage && npm run check-security",
+    "test": "npm run check-style && (istanbul cover --include-all-sources tape -- '!(node_modules)/**/*.test.js' | tap-spec) && npm run check-coverage && npm run check-security",
     "quick-test": "tape '!(node_modules)/**/*.test.js' | tap-spec",
     "check-coverage": "istanbul check-coverage",
     "check-style": "standard"
