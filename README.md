@@ -34,28 +34,28 @@ Log levels are recorded on the output and can be used to determine the level of 
 
 Log methods support the following types of input:
 
-#### logger.<level>('message')
+#### logger.\<level\>('message')
 
 Providing a message string will output the message under the property `message`.
 No substitution is performed.
 
-#### logger.<level>("message", { an: 'object' })
+#### logger.\<level\>("message", { an: 'object' })
 
 If an object is provided with a message, the behaviour is as above but with additional properties from the object included in the output.
 
-#### logger.<level>({ an: 'object' })
+#### logger.\<level\>({ an: 'object' })
 
 Providing an object will log all the fields of the object.
 
-#### logger.<level>(err)
+#### logger.\<level\>(err)
 
 **`Error` objects**: log output will include the error `name`, `message`, complete `stack` and also a `code` where there is one.
 
-#### logger.<level>(err, { an: 'object' })
+#### logger.\<level\>(err, { an: 'object' })
 
 The error will be logged as above, but with additional properties from the object included in the output.
 
-#### logger.<level>(err, 'message')
+#### logger.\<level\>(err, 'message')
 
 The error will be logged as above, but with the additional `message` property.
 
