@@ -106,6 +106,10 @@ buffer-shims@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/buffer-shims/-/buffer-shims-1.0.0.tgz#9978ce317388c649ad8793028c3477ef044a8b51"
 
+callable-object@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/callable-object/-/callable-object-1.0.2.tgz#110b21a8090412bce7fd3eeee9369287c65abcd8"
+
 caller-path@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/caller-path/-/caller-path-0.1.0.tgz#94085ef63581ecd3daa92444a8fe94e82577751f"
