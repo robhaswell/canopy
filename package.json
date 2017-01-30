@@ -1,8 +1,8 @@
 {
-  "name": "canopy",
+  "name": "canopi",
   "version": "1.0.0",
   "description": "🌴 A simple Node logging library for the cloud",
-  "main": "lib/canopy.js",
+  "main": "lib/canopi.js",
   "scripts": {
     "test": "npm run check-style && (istanbul cover --include-all-sources tape -- '!(node_modules)/**/*.test.js' | tap-spec) && npm run check-coverage && npm run check-security",
     "quick-test": "tape '!(node_modules)/**/*.test.js' | tap-spec",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robhaswell/canopy.git"
+    "url": "git+https://github.com/robhaswell/canopi.git"
   },
   "keywords": [
     "cloud",
@@ -24,9 +24,9 @@
   "author": "Rob Haswell <me@robhaswell.co.uk>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/robhaswell/canopy/issues"
+    "url": "https://github.com/robhaswell/canopi/issues"
   },
-  "homepage": "https://github.com/robhaswell/canopy#readme",
+  "homepage": "https://github.com/robhaswell/canopi#readme",
   "devDependencies": {
     "cover": "^0.2.9",
     "istanbul": "^0.4.5",
