@@ -86,21 +86,6 @@ It returns a new logger whose name is the parent logger with the new name append
 This is useful for splitting a logger up for grouping events.
 Consider the HTTP server case where you may want to group all events from a particular request together:
 
-## Error handlers
-
-Canopy supports a list of error handlers which are called in turn with each error logged.
-Errors are only handled if they are the first argument to a log method.
-
-#### canopy.addErrorHandler(function callback(err) { ... })
-
-Call `callback` with a single argument of the error instance whenever an error is logged as the first argument to a log method.
-
-## Other methods
-
-### canopy.quiet()
-
-Silence the logger output by preventing it from writing to `process.stdout` and removing any error handlers.
-
 ```js
 var log = canopy('server')
 
@@ -115,3 +100,18 @@ http.createServer(function (req, res) {
 })
 ```
 
+
+## Error handlers
+
+Canopy supports a list of error handlers which are called in turn with each error logged.
+Errors are only handled if they are the first argument to a log method.
+
+#### canopy.addErrorHandler(function callback(err) { ... })
+
+Call `callback` with a single argument of the error instance whenever an error is logged as the first argument to a log method.
+
+## Other methods
+
+### canopy.quiet()
+
+Silence the logger output by preventing it from writing to `process.stdout` and removing any error handlers.
