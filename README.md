@@ -77,7 +77,7 @@ The error will be logged as above, but with additional properties from the objec
 
 The error will be logged as above, but with the additional `message` property.
 
-**Note:** Any other call signature will throw a `TypeError`.
+**Note:** Any other call signature will log a `CanopyUsageError` at the requested log level.
 
 ### logger()
 
