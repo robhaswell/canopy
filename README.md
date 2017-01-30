@@ -68,6 +68,12 @@ It returns a new logger whose name is the parent logger with the new name append
 This is useful for splitting a logger up for grouping events.
 Consider the HTTP server case where you may want to group all events from a particular request together:
 
+## Other methods
+
+### canopy.quiet()
+
+Silence the logger output by preventing it from writing to `process.stdout` and removing any error handlers.
+
 ```js
 var log = canopy('server')
 
