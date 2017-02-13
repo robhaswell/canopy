@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/robhaswell/canopi-node#readme",
   "devDependencies": {
-    "cover": "^0.2.9",
     "istanbul": "^0.4.5",
     "nsp": "^2.6.2",
     "standard": "^8.6.0",
