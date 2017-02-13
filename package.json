@@ -24,11 +24,10 @@
   "author": "Rob Haswell <me@robhaswell.co.uk>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/robhaswell/canopi/issues"
+    "url": "https://github.com/robhaswell/canopi-node/issues"
   },
-  "homepage": "https://github.com/robhaswell/canopi#readme",
+  "homepage": "https://github.com/robhaswell/canopi-node#readme",
   "devDependencies": {
-    "cover": "^0.2.9",
     "istanbul": "^0.4.5",
     "nsp": "^2.6.2",
     "standard": "^8.6.0",
