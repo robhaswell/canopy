@@ -3,6 +3,8 @@
 
 ```js
 const log = canopi('app')
+log.setOutputStream(process.stdout)
+
 log.info('something happened', { thing: value })
 // {"timestamp":"...","name":"app","message":"something happened","thing":value}
 
@@ -17,7 +19,6 @@ log.error(new Error(), { kind: 'widgetFailed' })
 canopi.addErrorHandler((err) => { errors.report(err) })
 // Call `errors.report` with any logged `log.<level>(err)`
 ```
-
 
 ## Motivation
 
@@ -36,6 +37,10 @@ The API for Canopi is heavily inspired by Bole.
 
 Create a new **logger** with the supplied `name` to be attached to each output.
 If you keep a logger-per module you don't need to pass loggers around, *keep your concerns separated*.
+
+### canopi.setOutputStream(process.stdout)
+
+Configure the output stream.
 
 ### canopi({ aProperty: 'aValue'})
 
