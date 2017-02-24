@@ -105,6 +105,26 @@ http.createServer(function (req, res) {
 })
 ```
 
+## Formatters
+
+Canopi supports _formatters_, which are convenience functions the user can defined which format unweildy objects.
+A formatting function takes two arguments, a _key_ and a function.
+The function will be called with the value of the _key_ if anything is logged under that _key_.
+
+```js
+canopi.setFormatter('upper', (value) => value.toUpperCase())
+log.info({ upper: 'make me uppercase' })
+// {"timestamp":"...","upper":"MAKE ME UPPERCASE"}
+
+canopi.setFormatter('upper', null)
+log.info({ upper: 'make me uppercase' })
+// {"timestamp":"...","upper":"make me uppercase"}
+```
+
+A default formatter for `request` objects is available as `canopi.requestFormatter`.
+This can also be set (along with others in the future) with `canopi.defaultFormatters()`.
+
+Formatters are not chainable .
 
 ## Error handlers
 
