@@ -8,7 +8,8 @@
     "quick-test": "tape '!(node_modules)/**/*.test.js' | tap-spec",
     "check-security": "nsp check",
     "check-coverage": "istanbul check-coverage",
-    "check-style": "standard"
+    "check-style": "standard",
+    "debug": "node --nolazy --debug-brk=5858 node_modules/.bin/tape '!(node_modules)/**/*.test.js' | tap-spec"
   },
   "repository": {
     "type": "git",
