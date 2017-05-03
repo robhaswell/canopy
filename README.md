@@ -129,7 +129,7 @@ Formatters are not chainable .
 ## Error handlers
 
 Canopi supports a list of error handlers which are called in turn with each error logged.
-Errors are only handled if they are the first argument to a log method.
+Errors are passed to error handlers only if they are the first argument to a log method, they are an instance of `Error`, and the log level is `error`.
 
 #### canopi.addErrorHandler(function callback(err) { ... })
 
