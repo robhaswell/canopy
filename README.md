@@ -31,7 +31,7 @@ Other logging solutions such as [Bole](https://github.com/rvagg/canopi) or [Buny
 
 The API for Canopi is heavily inspired by Bole.
 
-## API
+## API
 
 ### canopi('name')
 
